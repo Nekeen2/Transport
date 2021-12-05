@@ -124,7 +124,7 @@ class Tricycle extends Transport implements Main.Ride, Main.Repair {
 }
 
 class Workshop{
-    public void rep (Transport transp){
+    static void rep (Transport transp){
         if(transp instanceof Unicycle){
             ((Unicycle)transp).repair();
         }
